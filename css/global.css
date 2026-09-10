@@ -1,0 +1,41 @@
+* {
+  font-family: "Nunito", sans-serif;
+}
+
+/*---------------------------------------------------------COLORS-----------------------------------------------------------*/
+:root {
+  --main-color: #fb2527;
+  --first-color: #fb2527;
+  --second-color: #0f7ad7;
+  --third-color: #ed9721;
+}
+
+/*-----------------------------------SCROLL BAR-------------------------------------*/
+
+html {
+  scrollbar-width: 35px;
+  scrollbar-color: var(--main-color) #fff;
+}
+html::-webkit-scrollbar {
+  width: 20px;
+}
+.mainColor {
+  color: var(--main-color);
+  background-color: transparent;
+  transition-duration: 0.5s;
+  border: 1px solid var(--main-color);
+}
+.mainColor:hover {
+  color: #fff;
+  background-color: var(--main-color);
+}
+.mainColor.remove {
+  color: #ffc107;
+  border: 1px solid #ffc107;
+  transition-duration: 0.5s;
+}
+
+.mainColor.remove:hover {
+  color: #fff;
+  background-color: #ffc107;
+}

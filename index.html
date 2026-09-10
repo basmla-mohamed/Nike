@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--------------------------------------META------------------------------------------------------>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="author" content="Basmala" />
+
+    <meta name="keywords" content="sports shoes, sneakers, athletic shoes, running shoes, basketball shoes, volleyball shoes, Nike shoes, Asics shoes, sports footwear, men's shoes, women's shoes, running sneakers, latest shoes, discounted shoes, online shoe store" />
+
+    <meta name="description" content="Shop the latest collection of stylish and high-performance sports shoes. Explore a wide range of athletic footwear with different sizes, colors, prices, and discounts, and find the perfect pair for your style and activity." />
+
+    <title>Nike</title>
+
+    <!--------------------------------------LINKING------------------------------------------------------>
+
+    <!-------FONTS------>
+    <link rel="stylesheet" href="css/fonts.css" />
+
+    <!-------ICONS------>
+    <link rel="stylesheet" href="css/all.css" />
+
+    <!-------CSS BOOTSTRAP------>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-------CSS------>
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/keyframes.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/index.responsive.css" />
+
+    <!-------LOGO------>
+    <link id="favicon" rel="icon" href="./images/first-logo.png" />
+  </head>
+
+  <body>
+    <!--------------------------------------------------------------------Loading Page-------------------------------------------------------->
+    <div class="loadingPage">
+      <img src="./images/nike.gif" alt="...." />
+    </div>
+
+    <!---------------------------------------------------------------------Nav Bar------------------------------------------------------------>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./images/first-logo.png" class="img-fluid" id="logo" />
+        </a>
+
+        <!--------button in responsive---------->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-lg-0 d-flex column-gap-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#latest">Latest</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#featured">Featured</a>
+            </li>
+          </ul>
+
+          <ul class="icons list-unstyled d-flex column-gap-3 align-items-center mb-0">
+            <li>
+              <i
+                class="fa-solid fa-heart"
+                onclick="
+                  showFavorites();
+                  closePopup('favorites');
+                "
+              ></i>
+            </li>
+            <li>
+              <!--show then open popup-->
+              <i
+                class="fa-solid fa-cart-shopping"
+                onclick="
+                  showCart();
+                  closePopup('shopping');
+                "
+              ></i>
+            </li>
+            <li>
+              <i
+                class="fa-solid fa-user"
+                onclick="
+                  openPopup('login');
+                  closePopup('login');
+                "
+              ></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--------------------------------------------------------------------Home---------------------------------------------------------------->
+    <header id="home" class="overflow-hidden">
+      <div id="main-carousel" class="vh-100">
+        <div class="main-carousel-inner h-100">
+          <!-- Slide 1 -->
+          <div class="main-carousel-item active h-100" data-color-name="first">
+            <div class="container h-100">
+              <div class="row h-100">
+                <div class="col-lg-6 part1">
+                  <div class="item">
+                    <h5 class="fs-4">Nike Red Shoes</h5>
+                    <h2 class="h1 fs-1 fw-bold my-3">Nike Metcon Shoes</h2>
+                    <p class="fw-semibold">Made for workouts, Nike Metcon Shoes deliver firm support, mobility, and reliable grip through every lift, sprint, and training session.</p>
+                    <a class="btn" href="#latest">See More</a>
+                  </div>
+                </div>
+                <div class="col-lg-6 part2">
+                  <div class="item">
+                    <img src="./images/home-text-1.png" class="img-fluid" />
+                    <img src="./images/home-shoe-1.png" class="img-fluid" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="main-carousel-item h-100" data-color-name="second">
+            <div class="container h-100">
+              <div class="row h-100">
+                <div class="col-lg-6 part1">
+                  <div class="item">
+                    <h5 class="fs-4">Nike blue Shoes</h5>
+                    <h2 class="h1 fs-1 fw-bold my-3">Nike Metcon Shoes</h2>
+                    <p class="fw-semibold">Built for heavy training, Nike Metcon Shoes offer maximum stability, flexible comfort, and ultimate traction during every squat, sprint, and high-intensity workout.</p>
+                    <a class="btn" href="#latest">See More</a>
+                  </div>
+                </div>
+                <div class="col-lg-6 part2">
+                  <div class="item">
+                    <img src="./images/home-text-2.png" class="img-fluid" />
+                    <img src="./images/home-shoe-2.png" class="img-fluid" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 3 -->
+          <div class="main-carousel-item h-100" data-color-name="third">
+            <div class="container h-100">
+              <div class="row h-100">
+                <div class="col-lg-6 part1">
+                  <div class="item">
+                    <h5 class="fs-4">Nike yellow Shoes</h5>
+                    <h2 class="h1 fs-1 fw-bold my-3">Nike Metcon Shoes</h2>
+                    <p class="fw-semibold">Crafted for tough grit, Nike Metcon Shoes deliver rock-solid balance, smooth agility, and relentless traction through every heavy press, dash, and grueling routine</p>
+                    <a class="btn" href="#latest">See More</a>
+                  </div>
+                </div>
+                <div class="col-lg-6 part2">
+                  <div class="item">
+                    <img src="./images/home-text-3.png" class="img-fluid" />
+                    <img src="./images/home-shoe-3.png" class="img-fluid" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        ;
+
+        <!-- Carousel Buttons -->
+        <button class="prev">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button class="next">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+    </header>
+
+    <!--------------------------------------------------------------------Offers-------------------------------------------------------------->
+    <div class="offers">
+      <div class="row g-0">
+        <div class="col-md-6 part part1">
+          <div class="item">
+            <a href="#home">
+              <img src="./images/home-banner-1.png" class="img-fluid" />
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 part part2">
+          <div class="item">
+            <a href="#home">
+              <img src="./images/home-banner-2.png" class="img-fluid" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--------------------------------------------------------------------Latest-------------------------------------------------------------->
+    <div id="latest" class="py-5">
+      <div class="container">
+        <div class="title mb-5">
+          <h2 class="h1 fs-2">LATEST PRODUCTS</h2>
+          <img src="./images/first-correct.png" />
+        </div>
+        <div class="content">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="item allProducts">
+                <!--we push products in it-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--------------------------------------------------------------------Featured------------------------------------------------------------>
+    <div id="featured" class="py-5">
+      <div class="container">
+        <div class="title mb-5">
+          <h2 class="h1 fs-2">Featured PRODUCTS</h2>
+          <img src="./images/first-correct.png" />
+        </div>
+        <div class="content">
+          <div class="row all"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-----------------------------------------------------------------Popup Of Favorites---------------------------------------------------->
+    <div class="popup" id="popupFavorites" data-popup-name="favorites">
+      <div class="box w-75 my-3 w-75 px-4 py-3">
+        <div class="head mb-5">
+          <h2 class="fs-3 fw-bold">Favorites</h2>
+          <i class="fa-regular fa-circle-xmark fs-4 exit"></i>
+        </div>
+        <div class="body">
+          <div class="row"></div>
+        </div>
+      </div>
+    </div>
+    <!--------------------------------------------------------------------Popup Of login------------------------------------------------------>
+    <div class="popup" id="popupLogin" data-popup-name="login">
+      <div class="box px-4 py-3">
+        <div class="head mb-5">
+          <h2 class="fs-3 fw-bold">Login</h2>
+          <i class="fa-regular fa-circle-xmark fs-4 exit"></i>
+        </div>
+        <div class="body">
+          <form action="">
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-user userName"></i></span>
+              <input type="text" class="form-control" placeholder="Username *" aria-label="Username" aria-describedby="basic-addon1" required />
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-lock password"></i></span>
+
+              <input type="text" class="form-control" placeholder="Password *" aria-label="Username" aria-describedby="basic-addon1" required />
+            </div>
+            <button class="btn btn-success w-100" type="submit">Login</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!--------------------------------------------------------------------Popup Of Shopping---------------------------------------------------->
+    <div class="popup" id="popupShopping" data-popup-name="shopping">
+      <div class="box w-75 px-4 py-3">
+        <div class="head mb-5">
+          <h2 class="fs-3 fw-bold">Shop</h2>
+          <i class="fa-regular fa-circle-xmark fs-4 exit"></i>
+        </div>
+        <div class="body">
+          <div class="row"></div>
+        </div>
+        <button class="btn buy w-100">Buy Now</button>
+      </div>
+    </div>
+
+    <!--------------------------------------------------------------Popup Of Product in featured---------------------------------------------->
+    <div class="popup" id="popupProduct" data-popup-name="product">
+      <div class="box px-4 py-4"></div>
+    </div>
+    <button class="back-to-top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <div class="message"></div>
+
+    <!--------------------------------------------------------------------LINKING JS-------------------------------------------------------->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="./js/shoes.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
